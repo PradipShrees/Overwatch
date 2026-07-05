@@ -1,6 +1,6 @@
 # Overwatch
 
-Headless person detection, tracking, and face-matching for Raspberry Pi.
+Detection, tracking, and face-matching for Raspberry Pi.
 
 Overwatch watches a Raspberry Pi camera feed, detects and tracks people, saves the
 sharpest headshot of each person it sees, uploads it to Amazon S3, checks it against
