@@ -52,4 +52,4 @@ echo
 echo "Before S3 upload / Rekognition / SNS will work, configure AWS credentials:"
 echo "    sudo apt-get install -y awscli   # optional, for 'aws configure'"
 echo "    aws configure                    # or place keys in ~/.aws/credentials"
-echo "Also edit config.json: set aws.region and your SNS topic ARN."
+echo "Also edit config.json: set aws.region and your SNS topic ARN.If any error please ASK LLM"
