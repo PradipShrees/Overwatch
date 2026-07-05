@@ -1,11 +1,14 @@
-# Overwatch
+# Overwatch Overview
 
-Detection, tracking, and face-matching for Raspberry Pi.
+This is a small scaled project that lets you detect, track and match faces of people to identify them. This can be used in multiple places (I mean under consent) like bar venue or where there is strict regulation and only authorised people can enter. Similar version of tracking people have been currently being used in Coles and Woolies here in Australia.
+
+# Please do a legal check before deploying something like this. 
+
 
 Overwatch watches a Raspberry Pi camera feed, detects and tracks people, saves the
 sharpest headshot of each person it sees, uploads it to Amazon S3, checks it against
 a collection of known faces with AWS Rekognition, and sends an SNS alert when a
-known face is matched. It runs fully headless — no monitor required — and keeps
+known face is matched. It runs fully headless no monitor required and keeps
 working in local-only mode if AWS is unreachable.
 
 ## Features
@@ -329,8 +332,8 @@ missing).
 
 This project captures and uploads images of people's faces and performs
 biometric matching on them. Depending on where you live and where the camera
-points, that can be regulated — for example by the GDPR in the EU or biometric
-privacy laws such as BIPA in Illinois — and may require consent, notice, or
+points, that can be regulated for example by the GDPR in the EU or biometric
+privacy laws such as BIPA in Illinois and may require consent, notice, or
 data-retention limits, especially if the camera sees visitors, neighbors, or
 public space. Amazon Rekognition's own terms of service also apply. Use it
 only where you have the right to record, and check your local rules before
