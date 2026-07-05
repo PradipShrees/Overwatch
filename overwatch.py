@@ -478,7 +478,7 @@ def main():
     last_faces = []
 
     if HEADLESS:
-        log.info("Running HEADLESS (no preview window). Press Ctrl+C to quit.\n")
+        log.info("Running HEADLESS (no preview window) or monitor view. Press Ctrl+C to quit.\n")
     else:
         log.info("Press 'q' to quit\n")
 
