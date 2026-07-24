@@ -1,14 +1,20 @@
-# Overwatch Overview
+# Overwatch
 
-This is a small scaled project that lets you detect, track and match faces of people to identify them. This can be used in multiple places (I mean under consent) like bar venue or where there is strict regulation and only authorised people can enter. Similar version of tracking people have been currently being used in Coles and Woolies here in Australia.
+A small-scale face detection, tracking, and matching system for access control in
+authorised settings — for example a licensed venue or a restricted facility where
+only registered people may enter. Similar systems are already in commercial use by
+major Australian retailers.
 
-# Please do a legal check before deploying something like this. 
+> **Responsible use:** face recognition is regulated in many jurisdictions
+> (e.g. the Australian Privacy Act and biometric-data laws elsewhere). Only
+> deploy this where you have clear legal authority and the informed consent of
+> the people being recorded. Do a legal review before any real-world deployment.
 
 
 Overwatch watches a Raspberry Pi camera feed, detects and tracks people, saves the
 sharpest headshot of each person it sees, uploads it to Amazon S3, checks it against
 a collection of known faces with AWS Rekognition, and sends an SNS alert when a
-known face is matched. It runs fully headless no monitor required and keeps
+known face is matched. It runs fully headless — no monitor required — and keeps
 working in local-only mode if AWS is unreachable.
 
 ## Features
@@ -55,8 +61,8 @@ overwatch_events.csv                One row per saved headshot
 On a fresh Raspberry Pi OS, clone the repo and run the installer:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/overwatch.git
-cd overwatch
+git clone https://github.com/PradipShrees/Overwatch.git
+cd Overwatch
 bash setup.sh
 ```
 
@@ -339,4 +345,6 @@ public space. Amazon Rekognition's own terms of service also apply. Use it
 only where you have the right to record, and check your local rules before
 deploying.
 
-## License-Free to use. Give me a star before cloning it :)
+## License
+
+[MIT](LICENSE) — free to use. If it helps you, a star is appreciated. :)
